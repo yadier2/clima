@@ -1,13 +1,44 @@
 body {
+
+ 
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto','Helvetica Neue',sans-serif;
+
+    background: #7494eb96;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #5c69a7, #588f85);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #7b8fe7, #3fceb4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.clima{
+  background:#04709418;
+  color: #4444;
+
+}
+
+.location-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:5px;
+  
+}
+.search{
+  transition: .3s;
+  width: 100%;
+  min-width: auto;
+  
+}
+.form-buscar{
+  margin-right: 10px;
+}
+
+@media screen and (min-width:500px){
+/*   .form-buscar:hover > .search {
+    width: 300px!important;
+  } */
+ 
+  .form-buscar > .search {
+    width: 400px!important;
+  }
 }
